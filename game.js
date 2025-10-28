@@ -2,7 +2,7 @@
 let secretNumber;
 let attempts;
 let guessHistory;
-let bestScore = localStorage.getItem('bestScore') || null;
+let bestScore = localStorage.getItem('bestScore') ? parseInt(localStorage.getItem('bestScore')) : null;
 
 // DOM elements
 const guessInput = document.getElementById('guess-input');
